@@ -9,6 +9,15 @@ or
 
 > _u.alog(obj.get('left'),'left')<br>=> left: 105
 
+**_u.snapspin(rotation,[snap degree])**<br>
+Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360 and cares for input errors as follows:
+null => 0
+undefined => 0
+NaN => 0
+false => 0
+
+> _u.snapspin(obj=get('rotation',45)<br>=> -5.5
+
 **_u.bound(number,lowerlimit,upperlimit,[integer true, false])**<br>
 Used restrict a number to a lower and upper range. Many uses in RPG applications (prevent over healing of hit points) or canvas applications (prevent a script from moving a token outside the canvas edges.) Optional true/false for **integers.** Cares for input errors as follows:
 null => 0
