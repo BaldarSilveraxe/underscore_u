@@ -4,10 +4,10 @@
                     log((label ? label + ': ' : '') + text);
                 };
                 bound(value,lower,upper,integer){
-                    v = Number(value)||~~value;
-                    l = Number(lower)||~~lower;
-                    u = Number(upper)||~~upper;
-                    r = integer ? ~~(Math.max(Math.min(v,u),l)) : Math.max(Math.min(v,u),l);
+                    var v = Number(value)||~~value,
+                        l = Number(lower)||~~lower,
+                        u = Number(upper)||~~upper,
+                        r = integer ? ~~(Math.max(Math.min(v,u),l)) : Math.max(Math.min(v,u),l);
                     return r;
                 },
                 snapspin(r,d){
