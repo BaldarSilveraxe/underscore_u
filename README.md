@@ -27,6 +27,16 @@ or
 
 <hr>
 
+**_u.snapdist(distance,unit,[integer true/false])*<br>***NOT WORKING***
+Used to snap a distance to a unit.
+> _u.snapdist(50.5,70,true)<br>=> 70
+
+or
+
+> _u.snapdist(50.5,0,10,true)<br>=> 56
+
+<hr>
+
 **_u.snapspin(rotation,[snap degree])**<br>
 Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360) and cares for input errors as follows:<br>
 null => 0<br>
