@@ -35,7 +35,7 @@ NaN => 0<br>
 false => 0<br>
 true => 0<br>
 
-> _u.snapspin(obj=get('rotation',45)<br>=> -5.5
+> _u.snapspin(obj=get('rotation',45)<br>=> 135 
 
 <hr>
 
