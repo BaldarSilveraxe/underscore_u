@@ -11,6 +11,15 @@ or
 
 **_u.removeObj(obj,[type required for non-graphics types])**<br>
 Used to remove an object. Returns false if the object is undefined. Graphic do not require a ***type*** ("graphic') but other objects require a ***type*** to avoid mistaken removal. 
+> var obj=getObj('graphic', id);<br>_u.removeObj(obj)<br>=> true
+
+or
+
+> var obj=getObj('character', id);<br>_u.removeObj(obj)<br>=> false
+
+or
+
+> var obj=getObj('character', id);<br>_u.removeObj(obj,'character')<br>=> false
 
 **_u.snapspin(rotation,[snap degree])**<br>
 Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360 and cares for input errors as follows:<br>
