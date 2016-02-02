@@ -27,10 +27,11 @@
                     return false;
                 },
                 
-                snapdist = function(distance,unit,integer){
+                snapdist = function(distance,unit,roundingtype){
                     var d = Number(distance)||~~distance,
                         u = Number(unit)||~~unit,
-                        r = integer ? ~~((d/u) * u) : ((d/u) * u);
+                        t = roundingtype === 'r' ? 0.5 : roundingtype === 'c' ? 1 : 0,
+                        r = ~~((d/u) + t) * u;
                     return r;
                 },
                 
