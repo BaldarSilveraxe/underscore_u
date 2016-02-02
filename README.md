@@ -8,7 +8,9 @@ Sends a "log" ( log([value]) ) to the API Output Console. Advantage is the scrip
 or
 
 > _u.alog(obj.get('left'),'left')<br>=> left: 105
+
 <hr>
+
 **_u.removeObj(obj,[type required for non-graphics types])**<br>
 Used to remove an object. Returns false if the object is undefined. Graphic do not require a ***type*** ("graphic') but other objects require a ***type*** to avoid mistaken removal. 
 > var obj=getObj('graphic', id);<br>_u.removeObj(obj)<br>=> true
