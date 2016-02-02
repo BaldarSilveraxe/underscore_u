@@ -27,13 +27,16 @@ or
 
 <hr>
 
-**_u.snapdist(distance,unit,[integer true/false])*<br>***NOT WORKING***
-Used to snap a distance to a unit.
-> _u.snapdist(50.5,70,true)<br>=> 70
+**_u.snapdist(distance,unit,[rounding type)*<br>Used to snap a distance to a unit. Rounding type is "f" (floor), "r" rounding, "c" ceiling.
+> _u.snapdist(50.5,70,"f")<br>=> 0
 
 or
 
-> _u.snapdist(50.5,0,10,true)<br>=> 56
+> _u.snapdist(50.5,70,"r")<br>=> 70
+
+or
+
+> _u.snapdist(70.5,70,"c")<br>=> 140
 
 <hr>
 
