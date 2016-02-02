@@ -28,7 +28,7 @@ or
 <hr>
 
 **_u.snapspin(rotation,[snap degree])**<br>
-Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360 and cares for input errors as follows:<br>
+Used to snap "isdrawing: true" rotation. Cares for over rotation (value larger then 360) and cares for input errors as follows:<br>
 null => 0<br>
 undefined => 0<br>
 NaN => 0<br>
